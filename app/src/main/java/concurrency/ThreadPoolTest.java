@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 public class ThreadPoolTest {
-    static void main() throws CancellationException, ExecutionException, InterruptedException {
+    static void main() throws ExecutionException, InterruptedException {
         try (ExecutorService service = Executors.newFixedThreadPool(5)) {
             List<Future<String>> list = new ArrayList<>(5);
 
