@@ -21,3 +21,17 @@ The shared build logic was extracted to a convention plugin located in `buildSrc
 
 This project uses a version catalog (see `gradle/libs.versions.toml`) to declare and version dependencies
 and both a build cache and a configuration cache (see `gradle.properties`).
+
+## Concepts
+
+- Object-Oriented Programming (OOP)
+  - Encapsulation
+  - Inheritance
+  - Multimorphism
+  - Abstraction
+- Reflection
+- Inversion of Control (IoC)
+  - Dependency Injection (DI)
+    - Factory Method
+- Annotation
+  - Reflection
