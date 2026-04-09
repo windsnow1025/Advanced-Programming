@@ -35,3 +35,6 @@ and both a build cache and a configuration cache (see `gradle.properties`).
     - Factory Method
 - Annotation
   - Reflection
+- Proxy
+  - Static Proxy
+  - Dynamic Proxy
