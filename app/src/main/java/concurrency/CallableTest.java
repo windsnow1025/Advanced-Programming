@@ -1,11 +1,12 @@
 package concurrency;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 
 public class CallableTest {
-    static void main() throws Exception {
+    static void main() throws ExecutionException, InterruptedException {
         MyThread mt = new MyThread();
 
         FutureTask<Integer> result = new FutureTask<>(mt);
