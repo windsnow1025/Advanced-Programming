@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 
-public class CallableTest {
+public class CallableDemo {
     static void main() throws ExecutionException, InterruptedException {
         MyThread mt = new MyThread();
 
