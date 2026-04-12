@@ -29,10 +29,10 @@ and both a build cache and a configuration cache (see `gradle.properties`).
   - Inheritance
   - Multimorphism
   - Abstraction
-- Reflection
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
     - Factory Method
+- Reflection
 - Annotation
   - Reflection
 - Proxy
@@ -41,4 +41,9 @@ and both a build cache and a configuration cache (see `gradle.properties`).
 - Aspect-Oriented Programming (AOP)
   - Annotation
     - Reflection
+  - Dynamic Proxy
+- Remote Procedure Call (RPC)
+  - IoC
+    - DI
+  - Reflection
   - Dynamic Proxy
