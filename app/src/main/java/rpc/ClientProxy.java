@@ -2,13 +2,13 @@ package rpc;
 
 import java.lang.reflect.Proxy;
 
-public class DynamicProxyFactory {
-    public static Object getProxy(Class<?> serviceClass, String host, int port) {
+public class ClientProxy {
+    public static Object getProxy(Class<?> serviceClass, Connector connector) {
         return Proxy.newProxyInstance(
                 serviceClass.getClassLoader(),
                 new Class<?>[] { serviceClass },
                 (_, method, args) -> {
-                    Connector connector = new Connector(host, port);
+                    System.out.println("[Client] Calling: " + method.getName());
                     RemoteCall call = new RemoteCall(
                             serviceClass.getName(),
                             method.getName(),
@@ -17,7 +17,7 @@ public class DynamicProxyFactory {
                     );
                     connector.send(call);
                     call = (RemoteCall) connector.receive();
-                    connector.close();
+                    System.out.println("[Client] Result: " + call.getResult());
                     return call.getResult();
                 }
         );

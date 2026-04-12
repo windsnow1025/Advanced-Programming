@@ -5,7 +5,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-public class Connector {
+public class Connector implements AutoCloseable {
     private final Socket socket;
     private final ObjectOutputStream out;
     private final ObjectInputStream in;
@@ -30,6 +30,7 @@ public class Connector {
         return in.readObject();
     }
 
+    @Override
     public void close() throws IOException {
         in.close();
         out.close();
