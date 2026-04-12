@@ -38,3 +38,7 @@ and both a build cache and a configuration cache (see `gradle.properties`).
 - Proxy
   - Static Proxy
   - Dynamic Proxy
+- Aspect-Oriented Programming (AOP)
+  - Annotation
+    - Reflection
+  - Dynamic Proxy
